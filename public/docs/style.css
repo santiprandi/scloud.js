@@ -1,0 +1,36 @@
+/* Set color variables. */
+:root {
+  --darkest: #191e38;
+  --darker: #2f365f;
+  --dark: #5661b3;
+  --base: #6574cd;
+  --light: #7886d7;
+  --lighter: #b2b7ff;
+  --lightest: #e6e8ff;
+
+  --font-color: white;
+}
+
+/* ========================================================================== */
+
+/* TODO: Add shadow */
+/* box-shadow: 0 0 1px var(--darker); */
+
+.ql-toolbar {
+  border-radius: 2px 2px 0 0;
+  background-color: var(--light);
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid var(--light);
+}
+
+.ql-editor {
+  border: 1px solid var(--light);
+  background-color: white;
+  border-radius: 0 0 2px 2px;
+}
+
+.ql-container.ql-snow {
+  border: none;
+}

@@ -1,0 +1,148 @@
+/* Set color variables. */
+:root {
+  --darkest: #12283a;
+  --darker: #1c3d5a;
+  --dark: #2779bd;
+  --base: #3490dc;
+  --light: #6cb2eb;
+  --lighter: #bcdefa;
+  --lightest: #eff8ff;
+
+  --font-color: white;
+}
+
+/* ========================================================================== */
+
+#upload-form {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+#upload-form input {
+  flex-grow: 2;
+  border: none;
+  background-color: var(--lightest);
+}
+#upload-form button {
+  padding: 10px 10px;
+  width: 100px;
+  transition: background-color 2s, color 0.5s, opacity 0.2s;
+}
+
+.upload-btn-0 {
+  background-color: #e3fcec;
+  color: black;
+}
+.upload-btn-25 {
+  background-color: #a2f5bf;
+  color: black;
+}
+.upload-btn-50 {
+  background-color: #51d88a;
+  color: black;
+}
+.upload-btn-75 {
+  background-color: #38c172;
+  color: black;
+}
+.upload-btn-success {
+  background-color: #1f9d55;
+}
+.upload-btn-error {
+  background-color: #e3342f;
+}
+
+/* ========================================================================== */
+
+#browser {
+  border: 1px solid var(--dark);
+  margin-bottom: 5%;
+  border-radius: 2px;
+  background-color: var(--dark);
+  box-shadow: 0 0 1px var(--darker);
+}
+#browser button {
+  border-radius: 0;
+}
+#browser-header {
+  border-bottom: 1px solid var(--dark);
+  display: flex;
+}
+#browser-header button {
+  padding: 15px;
+  background-color: var(--dark);
+  border: none;
+}
+#browser-header button:hover {
+  background-color: var(--base);
+}
+
+/* ========================================================================== */
+
+.browser-item {
+  display: flex;
+  border-bottom: 1px solid var(--lighter);
+  align-items: center;
+  transition: all 0.2s;
+  background-color: var(--lightest);
+}
+.browser-item:hover {
+  background-color: var(--light);
+}
+.browser-item span {
+  white-space: nowrap;
+  margin: 0 5px;
+  color: #12283a;
+}
+.browser-item span:first-child {
+  margin-left: 10px;
+}
+.browser-item span:nth-child(2) {
+  flex-grow: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.browser-item span:nth-child(3) {
+  font-size: x-small;
+  background-color: var(--darker);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+.browser-item button {
+  padding: 15px 10px;
+  background-color: transparent;
+  border: none;
+  color: #12283a;
+}
+.browser-item button:hover {
+  background-color: var(--base);
+}
+.browser-item:last-child {
+  border-bottom: 0;
+}
+
+/* ========================================================================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #upload-form {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  #browser {
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .browser-item:last-child {
+    border-radius: 0 !important;
+  }
+  .browser-item:last-child button {
+    border-radius: 0 !important;
+  }
+  #browser-header button:first-child {
+    border-radius: 0 !important;
+  }
+}

@@ -1,0 +1,50 @@
+:root {
+  --darkest: #3d4852;
+  --darker: #606f7b;
+  --dark: #8795a1;
+  --base: #b8c2cc;
+  --light: #dae1e7;
+  --lighter: #f1f5f8;
+  --lightest: #f8fafc;
+}
+header {
+  color: white;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.tile {
+  margin: 5% 0;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.2s;
+  text-align: center;
+  line-height: 200px;
+  font-size: x-large;
+}
+#files-tile {
+  border: 2px solid #3490dc;
+}
+#files-tile:hover {
+  background-color: #3490dc;
+  color: white;
+}
+#docs-tile {
+  border: 2px solid #6574cd;
+}
+#docs-tile:hover {
+  background-color: #6574cd;
+  color: white;
+}

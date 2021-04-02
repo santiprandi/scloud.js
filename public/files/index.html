@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Files</title>
+
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Files</h1>
+      <button id="logout">Logout</button>
+    </header>
+
+    <div class="container">
+      <form id="upload-form">
+        <input id="upload-input" type="file" multiple />
+        <button id="upload-button" type="submit">Upload</button>
+      </form>
+
+      <div id="browser">
+        <div id="browser-header">
+          <button id="go-back">
+            <i class="material-icons">arrow_back</i>
+          </button>
+          <button id="create-directory">
+            <i class="material-icons">create_new_folder</i>
+          </button>
+        </div>
+        <div id="browser-files"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "scloud",
+  "version": "1.0.0",
+  "description": "Lightweight, self-hosted productivity apps.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app & browser-sync start --proxy 'localhost:5500' --files 'public'",
+    "dev-back": "nodemon app",
+    "dev-front": "browser-sync start --server --files 'public'",
+    "config": "node config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiprandi/scloud.git"
+  },
+  "keywords": [],
+  "author": "Santiago Prandi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/santiprandi/scloud/issues"
+  },
+  "homepage": "https://github.com/santiprandi/scloud#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "multer": "^1.4.2",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "nodemon": "^1.19.4"
+  }
+}

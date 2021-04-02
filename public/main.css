@@ -1,0 +1,107 @@
+/* Import fonts. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: var(--lightest);
+  cursor: default;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark);
+  box-shadow: 0 0 3px var(--darkest);
+  margin-bottom: 5%;
+  color: var(--font-color);
+}
+header h1 {
+  flex-grow: 2;
+}
+header button {
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 2px solid var(--base);
+}
+header button:hover {
+  background-color: var(--base);
+  opacity: 1;
+  color: var(--font-color);
+}
+
+/* ================================ BUTTONS ================================= */
+
+/* Set a style for all the buttons. */
+button {
+  background-color: var(--base);
+  color: var(--font-color);
+  border: none;
+  transition: background-color 0.2s, opacity 0.2s;
+  border-radius: 3px;
+}
+/* Prevent Firefox button's text border when clicked. */
+button::-moz-focus-inner {
+  border: 0;
+}
+/* Animate buttons on hover. */
+button:hover {
+  opacity: 0.8;
+}
+
+/* =============================== RESPONSIVE =============================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    /* padding: 7% 10%; */
+    padding: 5vh 5vw;
+  }
+  .container {
+    margin: 0 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header {
+    padding: 5vh 5vw;
+  }
+  .container {
+    margin: 0 5%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 5vh 5vw;
+  }
+  .container {
+    margin: 0 10%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    padding: 5vh 5vw;
+  }
+  .container {
+    margin: 0 10%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 5vh 5vw;
+  }
+  .container {
+    margin: 0 15%;
+  }
+}
